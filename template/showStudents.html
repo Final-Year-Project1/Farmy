@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th>Roll No.</th><th>Name</th><th>Percentage</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for i in data %}
+                <tr>
+                    <td>{{i.roll}}</td><td>{{i.name}}</td><td>{{i.per}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
